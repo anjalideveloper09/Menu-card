@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+  min-height: 100%;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  min-height: 100%;
+  padding: 30px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.title-section {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title-section h1 {
+  font-size: 45px;
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 150px;
+  height: 1px;
+  background: #ff8800;
+  margin: 0 auto;
+  position: relative;
+}
+
+.line::after {
+  content: "❖";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff8800;
+  font-size: 18px;
+}
+
+/* Drinks Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 295px;
+  height: 450px;
+  background: #111;
+  border-radius: 20px;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #ff8800;
+  box-shadow: 0 0 20px rgba(255, 136, 0, 0.4);
+}
+
+/* Tag image */
+.tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #1a1a1a;
+  color: #ff8800;
+  border: 1px solid #ff8800;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+/* Image */
+.drink-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+/* Card Content */
+.card-content {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.card-content h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-family: Georgia, serif;
+}
+
+.card-content p {
+  color: #999;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.card-content .lines {
+  width: 80px;
+  height: 1px;
+  background: #ff8800;
+  margin: 0 auto 20px auto;
+}
+
+.price {
+  color: #ff8800;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Chef Section */
+.chef-section {
+  margin-top: 20px;
+  background: #0e0e0e;
+  border-radius: 25px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chef-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.food-img {
+  width: 350px;
+  object-fit: contain;
+}
+
+.chef-text {
+  max-width: 700px;
+}
+
+.chef-text h5 {
+  color: #ff8800;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.chef-text h2 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+}
+
+.chef-text p {
+  color: #9a9a9a;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border: 1px solid #ff8800;
+  border-radius: 40px;
+  color: #ff8800;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+.btn:hover {
+  background: #ff8800;
+  color: black;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+footer ul li {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ff8800;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff8800;
+}
